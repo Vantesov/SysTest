@@ -1,0 +1,9 @@
+create table answers(
+answer_id INTEGER not null,
+result_id INTEGER not null,
+test_id INTEGER not null,
+chosen_answer INTEGER not null,
+primary key (answer_id),
+foreign key (result_id) references results(result_id),
+foreign key (test_id) references test(test_id)
+);

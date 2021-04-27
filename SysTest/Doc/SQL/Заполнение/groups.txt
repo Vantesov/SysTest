@@ -1,0 +1,4 @@
+insert into groups(group_id,group_number) values(1,'18-ПК-21');
+insert into groups(group_id,group_number) values(2,'18-ПК-22');
+insert into groups(group_id,group_number) values(3,'19-ПК-11');
+insert into groups(group_id,group_number) values(4,'19-ПК-12');

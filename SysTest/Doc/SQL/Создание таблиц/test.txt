@@ -1,0 +1,9 @@
+create table test(
+test_id INTEGER not null,
+user_id INTEGER not null,
+topic_id INTEGER not null,
+number_of_questions INTEGER not null,
+primary key (test_id),
+foreign key (user_id) references users(user_id),
+foreign key (topic_id) references topics(topic_id)
+);

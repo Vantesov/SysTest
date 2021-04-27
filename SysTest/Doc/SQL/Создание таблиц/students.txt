@@ -1,0 +1,11 @@
+create table students (
+student_id INTEGER not null, 
+group_id INTEGER not null, 
+student_name VARCHAR(30) not null,
+student_lastname VARCHAR(60) not null,
+student_middlename VARCHAR(60) not null,
+student_login VARCHAR(30) not null,
+student_password VARCHAR(16) not null,
+primary key (student_id),
+foreign key (group_id) references groups(group_id)
+);

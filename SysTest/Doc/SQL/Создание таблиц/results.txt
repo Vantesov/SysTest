@@ -1,0 +1,9 @@
+create table results(
+result_Id INTEGER not null,
+student_id INTEGER not null,
+appraisal INTEGER not null,
+right_answers integer not null,
+wrong_answers integer not null
+primary key (result_Id),
+foreign key (student_id) references students(student_id)
+);

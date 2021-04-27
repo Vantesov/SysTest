@@ -1,0 +1,7 @@
+create table topics (
+topic_id INTEGER not null,
+discipline_id INTEGER not null,
+topic_name VARCHAR(90) not null,
+primary key (topic_id),
+foreign key (discipline_id) references disciplines(discipline_id)
+);

@@ -1,0 +1,51 @@
+unit Unit3;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, IBX.IBStoredProc, Data.DB,
+  IBX.IBCustomDataSet, IBX.IBQuery, IBX.IBDatabase;
+
+type
+  TForm3 = class(TForm)
+    IBDatabase1: TIBDatabase;
+    DataSource1: TDataSource;
+    IBTransaction1: TIBTransaction;
+    IBQuery1: TIBQuery;
+    IBStoredProc1: TIBStoredProc;
+    Label1: TLabel;
+    Edit1: TEdit;
+    Label2: TLabel;
+    Edit2: TEdit;
+    Button1: TButton;
+    Button2: TButton;
+    Button3: TButton;
+    Button4: TButton;
+    Button5: TButton;
+    Button6: TButton;
+    procedure Button1Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form3: TForm3;
+
+implementation
+
+{$R *.dfm}
+
+procedure TForm3.Button1Click(Sender: TObject);
+begin
+if IBQuery1.Bof then begin
+  IBQuery1.First;
+  Edit1.Text:= IBQuery1.FieldByName('Discipline_id').AsString;
+  Edit2.Text:= IBQuery1.FieldByName('Discipline_Name').AsString;
+  end else
+  ShowMessage('В начале!');
+end;
+
+end.

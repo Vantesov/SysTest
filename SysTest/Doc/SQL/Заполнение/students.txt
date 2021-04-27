@@ -1,0 +1,29 @@
+insert into students(student_id,group_id,student_name,student_lastname,student_middlename,student_login,student_password) 
+values(1,1,'Иван','Рогозин','Петович','login1','pass1');
+
+insert into students(student_id,group_id,student_name,student_lastname,student_middlename,student_login,student_password) 
+values(2,1,'Дмитрий','Васнецов','Алексеевич','login2','pass2');
+
+insert into students(student_id,group_id,student_name,student_lastname,student_middlename,student_login,student_password) 
+values(3,1,'Игорь','Крылов','Артёмович','login3','pass3');
+
+insert into students(student_id,group_id,student_name,student_lastname,student_middlename,student_login,student_password) 
+values(4,1,'Степан','Темнич','Андреевич','login4','pass4');
+
+insert into students(student_id,group_id,student_name,student_lastname,student_middlename,student_login,student_password) 
+values(5,1,'Константин','Синицин','Михайлович','login5','pass5');
+
+insert into students(student_id,group_id,student_name,student_lastname,student_middlename,student_login,student_password) 
+values(6,2,'Михаил','Гордиенко','Петрович','login6','pass6');
+
+insert into students(student_id,group_id,student_name,student_lastname,student_middlename,student_login,student_password) 
+values(7,2,'Владислава','Костечкина','Сергеевна','login7','pass7');
+
+insert into students(student_id,group_id,student_name,student_lastname,student_middlename,student_login,student_password) 
+values(8,2,'Ирина','Соболева','Андреевна','login8','pass8');
+
+insert into students(student_id,group_id,student_name,student_lastname,student_middlename,student_login,student_password) 
+values(9,2,'Даниэль','Сидоренко','Викторович','login9','pass9');
+
+insert into students(student_id,group_id,student_name,student_lastname,student_middlename,student_login,student_password) 
+values(10,2,'Александр','Васильков','Дмитриевич','login10','pass10');

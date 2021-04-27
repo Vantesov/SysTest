@@ -1,0 +1,96 @@
+create database "D:\KMRK\Дистанционка 3.0\курсовой проект\бд\SYSTESTDB.IB"
+user "SYSDBA"
+password "masterkey"
+page_size 4096
+length 250
+default character set win1251
+
+create table users (
+ user_id integer not null ,
+ user_name VARCHAR(30) not null,
+ user_lastname VARCHAR(60) not null,
+ user_middlename VARCHAR(60) not null,
+ user_role VARCHAR(60) not null,
+ user_login VARCHAR(30) not null,
+ user_password VARCHAR(16) not null,
+ primary key (user_id)
+);
+
+create table groups (
+group_id integer not null, 
+group_number VARCHAR(30) not null,
+primary key (group_id)
+)
+
+create table students (
+student_id INTEGER not null, 
+group_id INTEGER not null, 
+student_name VARCHAR(30) not null,
+student_lastname VARCHAR(60) not null,
+student_middlename VARCHAR(60) not null,
+student_login VARCHAR(30) not null,
+student_password VARCHAR(16) not null,
+primary key (student_id),
+foreign key (group_id) references groups(group_id)
+);
+
+create table disciplines (
+discipline_id integer not null,
+discipline_name VARCHAR(90) not null,
+primary key (discipline_id)
+);
+
+create table topics (
+topic_id INTEGER not null,
+discipline_id INTEGER not null,
+topic_name VARCHAR(90) not null,
+primary key (topic_id),
+foreign key (discipline_id) references disciplines(discipline_id)
+);
+
+create table test(
+test_id INTEGER not null,
+user_id INTEGER not null,
+topic_id INTEGER not null,
+number_of_questions INTEGER not null,
+primary key (test_id),
+foreign key (user_id) references users(user_id),
+foreign key (topic_id) references topics(topic_id)
+);
+
+create table questions (
+question_id INTEGER not null,
+test_id INTEGER not null,
+question_text VARCHAR(200) not null,
+primary key (question_id),
+foreign key (test_id) references test(test_id)
+);
+
+create table options(
+option_id INTEGER not null,
+question_id INTEGER not null,
+option_text VARCHAR(200) not null,
+option_correctivity boolean not null,
+primary key (option_id),
+foreign key (question_id) references questions(question_id)
+);
+
+create table results(
+result_Id INTEGER not null,
+student_id INTEGER not null,
+appraisal INTEGER not null,
+right_answers integer not null,
+wrong_answers integer not null,
+primary key (result_Id),
+foreign key (student_id) references students(student_id)
+);
+
+create table answers(
+answer_id INTEGER not null,
+result_id INTEGER not null,
+test_id INTEGER not null,
+chosen_answer INTEGER not null,
+primary key (answer_id),
+foreign key (result_id) references results(result_id),
+foreign key (test_id) references test(test_id)
+);

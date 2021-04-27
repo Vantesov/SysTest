@@ -1,0 +1,3 @@
+select test_id,topic_name,number_of_questions,question_id,question_text
+from test tes,questions q,topics top where
+tes.test_id =q.test_id and tes.topic_id=top.topic_id;

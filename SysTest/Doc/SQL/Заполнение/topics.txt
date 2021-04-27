@@ -1,0 +1,6 @@
+insert into topics(topic_id,discipline_id,topic_name) values(1,1,'Тест №1. Введение в высшую математику');
+insert into topics(topic_id,discipline_id,topic_name) values(2,1,'Тест №2.Графики функций');
+insert into topics(topic_id,discipline_id,topic_name) values(3,2,'Тест №1.Как правильно делать разминку');
+insert into topics(topic_id,discipline_id,topic_name) values(4,2,'Тест №2.Баскетболл');
+insert into topics(topic_id,discipline_id,topic_name) values(5,3,'Тест №1.Великие русские поэты');
+insert into topics(topic_id,discipline_id,topic_name) values(6,3,'Тест №2.Произведения Л.Н.Толстого');

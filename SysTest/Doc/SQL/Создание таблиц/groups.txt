@@ -1,0 +1,5 @@
+create table groups (
+group_id integer not null, 
+group_number VARCHAR(30) not null,
+primary key (group_id)
+)

@@ -1,0 +1,10 @@
+create generator AnswersGen;
+create generator DisciplinesGen;
+create generator GroupsGen;
+create generator OptionsGen;
+create generator QuestionsGen;
+create generator ResultsGen;
+create generator StudentsGen;
+create generator TestGen;
+create generator TopicsGen;
+create generator UsersGen;

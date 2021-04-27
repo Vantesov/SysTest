@@ -1,0 +1,8 @@
+insert into users(user_id,user_name,user_lastname,user_middlename,user_role,user_login,user_password)
+ values(1,'Станислав','Бондарев','Петрович','Учитель математики','stas1282','passwordhard');
+
+insert into users(user_id,user_name,user_lastname,user_middlename,user_role,user_login,user_password)
+ values(2,'Вячеслав','Петров','Иванович','Учитель физкультуры','slavateacher','password2');
+
+insert into users(user_id,user_name,user_lastname,user_middlename,user_role,user_login,user_password)
+ values(3,'Ирина','Павлова','Степановна','Учитель литературы','literature','password3');

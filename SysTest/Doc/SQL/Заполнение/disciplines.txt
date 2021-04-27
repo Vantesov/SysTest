@@ -1,0 +1,3 @@
+insert into disciplines(discipline_id,discipline_name) values(1,'Математика');
+insert into disciplines(discipline_id,discipline_name) values(2,'Физическая культура');
+insert into disciplines(discipline_id,discipline_name) values(3,'Литература');

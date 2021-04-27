@@ -1,0 +1,8 @@
+create table options(
+option_id INTEGER not null,
+question_id INTEGER not null,
+option_text VARCHAR(200) not null,
+option_correctivity bit not null,
+primary key (option_id),
+foreign key (question_id) references questions(question_id)
+);

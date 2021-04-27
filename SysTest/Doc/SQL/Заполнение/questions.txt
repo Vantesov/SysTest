@@ -1,0 +1,7 @@
+insert into questions(question_id,test_id,question_text) values(1,1,'Найдите лишнее произведение.');
+insert into questions(question_id,test_id,question_text) values(2,1,'Какое произведение написал Л.Н.Толстой?');
+insert into questions(question_id,test_id,question_text) values(3,1,'Из какого произведения приведённые строчки?
+Оба, как ящерицы, вытягивались в воде и что было силы поплыли к тому месту, где был бочонок над якорем.');
+insert into questions(question_id,test_id,question_text) values(4,1,'Какое из приведённых произведений можно назвать научно-познавательным?');
+insert into questions(question_id,test_id,question_text) values(5,1,'Сколько братьев и сестёр было у Л.Н.Толстого?');
+insert into questions(question_id,test_id,question_text) values(6,1,'Кто иносказательно, а не прямо рассказал о недостатках людей?');
